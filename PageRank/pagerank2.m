@@ -12,6 +12,7 @@ function[R] = pagerank2(M, beta, epsilon)
 % code is vectorised
 
 N = size(M)(1);
+% E = matrix of 1s, used in multiplication of teleportation
 E = ones(N);
 % initialise R as 1/N
 R = zeros(N,1);
