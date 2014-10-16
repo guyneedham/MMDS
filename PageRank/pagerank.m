@@ -14,6 +14,7 @@ function[R] = pagerank(A, R, beta, epsilon)
 %epsilon - convergence threshold
 
 N = size(A)(1);
+% E = matrix one 1s, used to broadcast teleportation
 E = ones(N);
 R_last = R;
 delta=epsilon;
