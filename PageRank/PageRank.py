@@ -2,6 +2,7 @@ import numpy as np
 
 def PageRank(M, beta, epsilon):
     N = M.shape[0]
+    # array of 1s used to multiply teleportation probability
     E = np.ones((N,N))
     R = np.zeros(N)
     R[R==0] = 1/float(N)
